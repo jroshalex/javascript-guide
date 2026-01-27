@@ -36,6 +36,45 @@ console.log(a); // 10
 
 ➡️ **Primitives are copied by value**
 
+
+**JS is dynamically typed.**
+But here are the *practical* ways to indicate or enforce types:
+
+### 1️⃣ By assignment (implicit)
+
+```js
+let x = 5;        // number
+let name = "Sam"; // string
+```
+
+### 2️⃣ Runtime checks
+
+```js
+if (typeof x === "number") { ... }
+```
+
+### 3️⃣ Instance checks (objects/classes)
+
+```js
+if (user instanceof Person) { ... }
+```
+
+### 4️⃣ JSDoc (type hints, no enforcement)
+
+```js
+/** @type {number} */
+let count;
+```
+
+### 5️⃣ TypeScript (actual types)
+
+```ts
+let age: number = 21;
+```
+
+👉 **Plain JS doesn’t enforce types; TypeScript does.**
+
+
 ---
 
 ## 🔹 Objects (reference types)
